@@ -1,46 +1,83 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+  
 
-## Available Scripts
+<span  align="center">
 
-In the project directory, you can run:
+![NPM](https://img.shields.io/npm/l/react-search-box?style=for-the-badge) <a  href="https://codesandbox.io/s/react-material-ui-searchbar-ito9di?file=/src/App.tsx"  target="_blank">![Edit on Codesandbox](https://img.shields.io/badge/demo-Edit%20on%20Codesandbox-2385f7?style=for-the-badge&logo=codesandbox)</a>
 
-### `npm start`
+  
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+</span>
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+  
 
-### `npm test`
+### Installation
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+  
 
-### `npm run build`
+```sh
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# npm
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+npm i react-material-ui-searchbar --save
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+  
 
-### `npm run eject`
+# yarn
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+yarn add react-material-ui-searchbar
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+  
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### Usage
 
-## Learn More
+  
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```js
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+import SearchComponent from 'react-material-ui-searchbar';
+
+export default function App() {
+  return (
+    <div className='App'>
+      <SearchComponent />
+    </div>
+  );
+}
+```
+
+  
+
+## Props
+
+  
+
+
+
+| **Name**       | **Type**                                          | **Default** | **Description**                           |
+|----------------|---------------------------------------------------|-------------|-------------------------------------------|
+| placeholder    | string                                            | Search      | Placeholder in search bar                 |
+| onChangeHandle | ( value :  string )  =>   void                    |             | Returns the text change in the search bar |
+| initialValue   | string                                            | ""          | Initial Value in the search bar           |
+| svgFontSize    | 'inherit'  \|  'medium'  \|  'large'  \|  'small' | 'small'     | Search SVG icon font size                 |
+| sx             | [SxProps](https://mui.com/system/the-sx-prop/)                                          | {}          | Sx Props for customizing Search Bar       |
+
+  
+
+## Built With
+
+  
+
+- [React](https://reactjs.org/) - A JavaScript library for building user interfaces
+
+- [Material UI](https://mui.com/material-ui/getting-started/overview/) - Component Library for Material UI
+
+  
+
+## License
+
+  
+
+MIT Licensed. Copyright (c) Vishal Ramanand Sharma 2022.
