@@ -1,4 +1,4 @@
-import { SxProps } from "@mui/material";
+import { SxProps, TextFieldProps } from "@mui/material";
 
 export interface SearchComponentProps {
     placeholder?: string;
@@ -6,4 +6,5 @@ export interface SearchComponentProps {
     initialValue?: string;
     sx?: SxProps;
     svgFontSize?: 'inherit' | 'medium' | 'large' | 'small';
+    inputLabelProps?: TextFieldProps
 }

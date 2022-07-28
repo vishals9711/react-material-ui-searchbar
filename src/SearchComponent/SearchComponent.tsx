@@ -9,6 +9,7 @@ const SearchComponent = (props: SearchComponentProps): React.ReactElement => {
     placeholder = 'Search',
     sx = { width: '100%' },
     svgFontSize = 'small',
+    inputLabelProps = {}
   } = props;
   const [value, setValue] = useState(initialValue);
 
@@ -45,6 +46,7 @@ const SearchComponent = (props: SearchComponentProps): React.ReactElement => {
         setValue(event.target.value);
         if (onChangeHandle) onChangeHandle(event.target.value);
       }}
+      {...inputLabelProps}
     />
   );
 };

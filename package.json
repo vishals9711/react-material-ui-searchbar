@@ -1,6 +1,6 @@
 {
   "name": "react-material-ui-searchbar",
-  "version": "1.0.1",
+  "version": "1.0.4",
   "description": "Searchbar Based on Material UI for ReactJS",
   "main": "index.js",
   "scripts": {
